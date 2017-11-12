@@ -1,24 +1,30 @@
 .step {
   display: flex;
   align-items: center;
-  padding: 0 20px;
-  font-size: 13px; }
+  padding: 10px;
+  font-size: 13px;
+  border: solid lightgray;
+  border-width: 1px 1px 0;
+  border-radius: 3px 3px 0 0;
+  background: #f9f9f9;
+  color: #515151; }
 
-.step-selected .step__number {
-  background-color: blue; }
+.step-selected {
+  border-color: black;
+  color: black;
+  background: white;
+  box-shadow: 0 1px 0 0 white; }
+  .step-selected .step__number {
+    color: blue; }
 
 .step-clickable {
   cursor: pointer; }
+  .step-clickable .step__number {
+    color: green; }
 
 .step__number {
-  background-color: #eee;
-  padding: 5px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  line-height: 20px;
-  text-align: center;
-  flex: 0 0 20px; }
+  font-size: 24px;
+  font-weight: bold; }
 
 .step__title {
   margin-left: 10px; }

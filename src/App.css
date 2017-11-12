@@ -1,22 +1,41 @@
 .container {
-  width: 100%; }
+  max-width: 1000px;
+  padding: 15px;
+  margin: auto;
+  font-size: 14px;
+  font-family: Arial, sans-serif; }
 
 .tab-panel {
   display: flex;
-  justify-content: space-between; }
+  padding: 0 5px; }
 
 .form-content {
-  padding: 0 20px; }
+  padding: 20px 10px;
+  border: 1px solid black;
+  border-radius: 3px; }
 
 .button-panel {
-  padding: 10px 20px;
+  padding: 10px;
   display: flex; }
 
 .button-next {
   margin-left: auto;
-  background-color: blue;
-  color: white; }
+  background-color: deepskyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none; }
+  .button-next:disabled {
+    background-color: #eee;
+    color: black;
+    cursor: not-allowed; }
 
-.button-next:disabled {
-  background-color: #eee;
-  color: black; }
+input {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  outline: none; }
+  input:focus {
+    box-shadow: 0 0 5px 0 deepskyblue; }
